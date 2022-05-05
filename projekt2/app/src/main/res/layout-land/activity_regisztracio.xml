@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisztracioActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/regisztracio"
+        android:text="@string/regisztracio"
+        android:layout_marginTop="25dp"
+        android:textSize="18dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/felhasznalonev"
+        android:layout_below="@id/regisztracio"
+        android:layout_marginTop="10dp"
+        android:hint="@string/felhasznalonev"
+        android:inputType="text"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/jelszo"
+        android:layout_below="@id/felhasznalonev"
+        android:layout_marginTop="10dp"
+        android:hint="@string/jelszo"
+        android:inputType="textPassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/jelszomegint"
+        android:layout_below="@id/jelszo"
+        android:layout_marginTop="10dp"
+        android:hint="@string/jelszomegerositese"
+        android:inputType="textPassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailcim"
+        android:layout_below="@id/jelszomegint"
+        android:layout_marginTop="10dp"
+        android:hint="@string/emailcim"
+        android:inputType="textEmailAddress"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/emailcim"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/megsem"
+            android:onClick="megsem"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:text="@string/regisztracio"
+            android:onClick="regisztracio"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

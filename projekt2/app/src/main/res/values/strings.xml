@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Kérdőívkészítő</string>
+    <string name="felhasznalonev">Felhasználónév</string>
+    <string name="jelszo">Jelszó</string>
+    <string name="bejelentkezes">Bejelentkezés</string>
+    <string name="regisztracio">Regisztráció</string>
+    <string name="jelszomegerositese">Jelszó megerősítése</string>
+    <string name="emailcim">E-mail cím</string>
+    <string name="megsem">Mégsem</string>
+    <string name="belepes_vendegkent">Belépés vendégként</string>
+    <string name="kijelentkezes">Kijelentkezés</string>
+    <string name="milyenkerdo">Milyen fajta kérdőívet készítenél?</string>
+    <string name="eldontendo">Eldöntendő</string>
+    <string name="megvalaszolando">Megválaszolandó</string>
+    <string name="addmegkerdesek">Add meg a kérdéseket:</string>
+    <string name="mentes">Mentés</string>
+    <string name="addmeg">Add meg a mentés/törlés/betöltés/frissítés helyét:</string>
+    <string name="letoltes">Letöltés</string>
+    <string name="t_rl_s">Törlés</string>
+    <string name="friss_t_s">Frissítés</string>
+</resources>

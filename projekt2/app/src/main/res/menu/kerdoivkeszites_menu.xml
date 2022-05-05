@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/Kijelentkezes"
+        android:title="@string/kijelentkezes"
+        app:showAsAction="never"
+        app:actionViewClass="android.widget.Button"
+        />
+    <item
+        android:id="@+id/Mentes"
+        android:title="@string/mentes"
+        app:showAsAction="never"
+        app:actionViewClass="android.widget.Button"
+        />
+    <item
+        android:id="@+id/Frissites"
+        android:title="@string/friss_t_s"
+        app:showAsAction="never"
+        app:actionViewClass="android.widget.Button"
+        />
+    <item
+        android:id="@+id/Torles"
+        android:title="@string/t_rl_s"
+        app:showAsAction="never"
+        app:actionViewClass="android.widget.Button"
+        />
+    <item
+        android:id="@+id/Letoltes"
+        android:title="@string/letoltes"
+        app:showAsAction="never"
+        app:actionViewClass="android.widget.Button"
+        />
+</menu>

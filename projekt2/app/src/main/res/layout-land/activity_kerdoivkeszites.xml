@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".KerdoivkeszitesActivity">
+
+        <TextView
+            android:id="@+id/milyenlegyen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/milyenkerdo"
+            android:textAlignment="center"
+            android:textSize="12dp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <RadioGroup
+            android:id="@+id/Kerdesektipusa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/milyenlegyen">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/megvalaszolando"/>
+
+            <RadioButton
+                android:id="@+id/eldontendo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eldontendo"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/kerdesekjonnek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/addmegkerdesek"
+            android:textAlignment="center"
+            android:textSize="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/Kerdesektipusa"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <EditText
+            android:id="@+id/elso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            app:layout_constraintTop_toBottomOf="@+id/kerdesekjonnek"
+            tools:layout_editor_absoluteX="42dp" />
+
+        <EditText
+            android:id="@+id/masodik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            app:layout_constraintTop_toBottomOf="@+id/elso"
+            tools:layout_editor_absoluteX="42dp" />
+
+        <EditText
+            android:id="@+id/harmadik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            app:layout_constraintTop_toBottomOf="@+id/masodik"
+            tools:layout_editor_absoluteX="42dp" />
+
+        <EditText
+            android:id="@+id/negyedik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            app:layout_constraintTop_toBottomOf="@+id/harmadik"
+            tools:layout_editor_absoluteX="42dp" />
+
+        <EditText
+            android:id="@+id/otodik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            app:layout_constraintTop_toBottomOf="@+id/negyedik"
+            tools:layout_editor_absoluteX="42dp" />
+
+        <TextView
+            android:id="@+id/mentesneve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/addmeg"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/otodik"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <EditText
+            android:id="@+id/mentesnevedittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:inputType="text"
+            app:layout_constraintTop_toTopOf="@+id/mentesneve" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

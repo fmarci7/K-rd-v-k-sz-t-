@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/EditTextFelhasznalonev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/emailcim"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/EditTextJelszo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/jelszo"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextFelhasznalonev"
+        app:layout_constraintVertical_bias="0.029"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/ButtonBejelentkezes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="36dp"
+        android:onClick="bejelentkezes"
+        android:text="@string/bejelentkezes"
+        app:layout_constraintEnd_toStartOf="@+id/ButtonVendegkent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextJelszo" />
+
+    <Button
+        android:id="@+id/ButtonRegisztracio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="44dp"
+        android:onClick="regisztracio"
+        android:text="@string/regisztracio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/ButtonVendegkent"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextJelszo" />
+
+    <Button
+        android:id="@+id/ButtonVendegkent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:onClick="belepesVendegkent"
+        android:text="@string/belepes_vendegkent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextJelszo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
